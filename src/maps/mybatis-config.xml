@@ -1,0 +1,32 @@
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+ 
+<configuration>
+    <typeAliases>
+        <typeAlias alias="Login" type="modelo.Funcionario" />
+    </typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC" />
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://sql3.freesqldatabase.com/sql3189914"/>
+                <property name="username" value="sql3189914"/>
+                <property name="password" value="YpWerjrSyr"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="maps/LoginSqlMap.xml" />
+    </mappers>
+</configuration>
+
+
+
+
+
+
+
+
+        
